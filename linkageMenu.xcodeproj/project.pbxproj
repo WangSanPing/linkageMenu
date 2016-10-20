@@ -14,6 +14,11 @@
 		5976E31D1DB8963C0094A6BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5976E31C1DB8963C0094A6BB /* Assets.xcassets */; };
 		5976E3201DB8963C0094A6BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5976E31E1DB8963C0094A6BB /* LaunchScreen.storyboard */; };
 		5976E32B1DB8963C0094A6BB /* linkageMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5976E32A1DB8963C0094A6BB /* linkageMenuTests.m */; };
+		5976E33A1DB8AECE0094A6BB /* WXSubCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5976E3391DB8AECE0094A6BB /* WXSubCategoryViewController.m */; };
+		5976E33D1DB8AEE90094A6BB /* WXCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5976E33C1DB8AEE90094A6BB /* WXCategoryViewController.m */; };
+		5976E3421DB8B0BC0094A6BB /* WXCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5976E3411DB8B0BC0094A6BB /* WXCategoryModel.m */; };
+		5976E3461DB8BCE30094A6BB /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5976E3451DB8BCE30094A6BB /* categories.plist */; };
+		5976E3491DB8BDDD0094A6BB /* WXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5976E3481DB8BDDD0094A6BB /* WXCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,15 @@
 		5976E3261DB8963C0094A6BB /* linkageMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = linkageMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5976E32A1DB8963C0094A6BB /* linkageMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = linkageMenuTests.m; sourceTree = "<group>"; };
 		5976E32C1DB8963C0094A6BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5976E3381DB8AECE0094A6BB /* WXSubCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSubCategoryViewController.h; sourceTree = "<group>"; };
+		5976E3391DB8AECE0094A6BB /* WXSubCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSubCategoryViewController.m; sourceTree = "<group>"; };
+		5976E33B1DB8AEE90094A6BB /* WXCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXCategoryViewController.h; path = ../WXCategoryViewController.h; sourceTree = "<group>"; };
+		5976E33C1DB8AEE90094A6BB /* WXCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXCategoryViewController.m; path = ../WXCategoryViewController.m; sourceTree = "<group>"; };
+		5976E3401DB8B0BC0094A6BB /* WXCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCategoryModel.h; sourceTree = "<group>"; };
+		5976E3411DB8B0BC0094A6BB /* WXCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCategoryModel.m; sourceTree = "<group>"; };
+		5976E3451DB8BCE30094A6BB /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		5976E3471DB8BDDD0094A6BB /* WXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXCategory.h; sourceTree = "<group>"; };
+		5976E3481DB8BDDD0094A6BB /* WXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXCategory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +104,14 @@
 				5976E31E1DB8963C0094A6BB /* LaunchScreen.storyboard */,
 				5976E3211DB8963C0094A6BB /* Info.plist */,
 				5976E3101DB8963C0094A6BB /* Supporting Files */,
+				5976E33B1DB8AEE90094A6BB /* WXCategoryViewController.h */,
+				5976E33C1DB8AEE90094A6BB /* WXCategoryViewController.m */,
+				5976E3381DB8AECE0094A6BB /* WXSubCategoryViewController.h */,
+				5976E3391DB8AECE0094A6BB /* WXSubCategoryViewController.m */,
+				5976E3401DB8B0BC0094A6BB /* WXCategoryModel.h */,
+				5976E3411DB8B0BC0094A6BB /* WXCategoryModel.m */,
+				5976E3471DB8BDDD0094A6BB /* WXCategory.h */,
+				5976E3481DB8BDDD0094A6BB /* WXCategory.m */,
 			);
 			path = linkageMenu;
 			sourceTree = "<group>";
@@ -97,6 +119,7 @@
 		5976E3101DB8963C0094A6BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5976E3451DB8BCE30094A6BB /* categories.plist */,
 				5976E3111DB8963C0094A6BB /* main.m */,
 			);
 			name = "Supporting Files";
@@ -193,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5976E3461DB8BCE30094A6BB /* categories.plist in Resources */,
 				5976E3201DB8963C0094A6BB /* LaunchScreen.storyboard in Resources */,
 				5976E31D1DB8963C0094A6BB /* Assets.xcassets in Resources */,
 				5976E31B1DB8963C0094A6BB /* Main.storyboard in Resources */,
@@ -216,6 +240,10 @@
 				5976E3181DB8963C0094A6BB /* ViewController.m in Sources */,
 				5976E3151DB8963C0094A6BB /* AppDelegate.m in Sources */,
 				5976E3121DB8963C0094A6BB /* main.m in Sources */,
+				5976E33D1DB8AEE90094A6BB /* WXCategoryViewController.m in Sources */,
+				5976E3421DB8B0BC0094A6BB /* WXCategoryModel.m in Sources */,
+				5976E3491DB8BDDD0094A6BB /* WXCategory.m in Sources */,
+				5976E33A1DB8AECE0094A6BB /* WXSubCategoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = linkageMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangxu.linkageMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = linkageMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangxu.linkageMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,6 +440,7 @@
 				5976E3311DB8963C0094A6BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5976E3321DB8963C0094A6BB /* Build configuration list for PBXNativeTarget "linkageMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +449,7 @@
 				5976E3341DB8963C0094A6BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
