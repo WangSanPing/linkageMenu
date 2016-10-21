@@ -62,6 +62,9 @@ NSString *categoryID = @"category";
     
     WXCategory *item = self.category[indexPath.row];
     cell.textLabel.text = item.name;
+    cell.imageView.image = [UIImage imageNamed:item.icon];
+    cell.imageView.highlightedImage = [UIImage imageNamed:item.highlighted_icon];
+    cell.textLabel.highlightedTextColor = [UIColor redColor];
     return cell;
 }
 
